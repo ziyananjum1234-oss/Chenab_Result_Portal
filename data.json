@@ -1,0 +1,2266 @@
+{
+  "institute": "Chenab College Shorkot",
+  "test_name": "MONTHY TEST OCT,2026",
+  "session": "2026-27",
+  "class_name": "Class : 7 - (G) Jades",
+  "exam_date": "Exam Date:10/16/2026",
+  "total_students": 24,
+  "students": [
+    {
+      "id": "3320354393768",
+      "name": "Amna Ibrahim",
+      "class_pos": "3",
+      "sec_pos": "3",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "199",
+      "percentage": "99.5",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320349244556",
+      "name": "Asmara Fatima",
+      "class_pos": "28",
+      "sec_pos": "12",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "12",
+          "percentage": "48.0%",
+          "grade": "F",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "21.5",
+          "percentage": "86.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "23",
+          "percentage": "92.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "177.5",
+      "percentage": "88.75",
+      "grade": "A",
+      "remarks": "Excellent achievement! High academic dedication demonstrated.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320383240278",
+      "name": "Dua Fatima",
+      "class_pos": "11",
+      "sec_pos": "9",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "23.5",
+          "percentage": "94.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "19.5",
+          "percentage": "78.0%",
+          "grade": "B",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "193",
+      "percentage": "96.5",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3810153863478",
+      "name": "Eishal Fatima",
+      "class_pos": "63",
+      "sec_pos": "17",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22.5",
+          "percentage": "90.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "144.5",
+      "percentage": "72.25",
+      "grade": "B",
+      "remarks": "Very good result. With focused effort, can achieve top grades.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320328230300",
+      "name": "Eman Sajid",
+      "class_pos": "38",
+      "sec_pos": "13",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22.5",
+          "percentage": "90.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "15.5",
+          "percentage": "62.0%",
+          "grade": "C",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "23",
+          "percentage": "92.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "21.5",
+          "percentage": "86.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "12.5",
+          "percentage": "50.0%",
+          "grade": "D",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "170",
+      "percentage": "85",
+      "grade": "A",
+      "remarks": "Excellent achievement! High academic dedication demonstrated.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320318363332",
+      "name": "Eshal Zahra",
+      "class_pos": "58",
+      "sec_pos": "16",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "148.5",
+      "percentage": "74.25",
+      "grade": "B",
+      "remarks": "Very good result. With focused effort, can achieve top grades.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320368474610",
+      "name": "Faseeh Noor",
+      "class_pos": "1",
+      "sec_pos": "1",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "200",
+      "percentage": "100",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320320393736",
+      "name": "Hadia Waseem",
+      "class_pos": "16",
+      "sec_pos": "11",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "23.5",
+          "percentage": "94.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "17.5",
+          "percentage": "70.0%",
+          "grade": "B",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "188.5",
+      "percentage": "94.25",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320377126312",
+      "name": "Hareem Fatima",
+      "class_pos": "5",
+      "sec_pos": "5",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "197.5",
+      "percentage": "98.75",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320388353182",
+      "name": "Maria Altaf",
+      "class_pos": "1",
+      "sec_pos": "1",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "200",
+      "percentage": "100",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320359105148",
+      "name": "Marwa Mudassar",
+      "class_pos": "12",
+      "sec_pos": "10",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "18.5",
+          "percentage": "74.0%",
+          "grade": "B",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "192.5",
+      "percentage": "96.25",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320362755030",
+      "name": "Mifrah Fakhir",
+      "class_pos": "4",
+      "sec_pos": "4",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "198",
+      "percentage": "99",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3610235107158",
+      "name": "Mizab-e- Rehmat",
+      "class_pos": "4",
+      "sec_pos": "4",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "198",
+      "percentage": "99",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320377918352",
+      "name": "Moazma Narjis",
+      "class_pos": "43",
+      "sec_pos": "14",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "23",
+          "percentage": "92.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "19",
+          "percentage": "76.0%",
+          "grade": "B",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "167",
+      "percentage": "83.5",
+      "grade": "A",
+      "remarks": "Excellent achievement! High academic dedication demonstrated.",
+      "status": "Pass"
+    },
+    {
+      "id": "3630244714946",
+      "name": "Noor Fatima",
+      "class_pos": "71",
+      "sec_pos": "18",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "16.5",
+          "percentage": "66.0%",
+          "grade": "C",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "23.5",
+          "percentage": "94.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "133",
+      "percentage": "66.5",
+      "grade": "C",
+      "remarks": "Good effort. Consistent revision recommended for improvement.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320366801548",
+      "name": "Rabiya Riaz",
+      "class_pos": "76",
+      "sec_pos": "19",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "19",
+          "percentage": "76.0%",
+          "grade": "B",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "19.5",
+          "percentage": "78.0%",
+          "grade": "B",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "8",
+          "percentage": "32.0%",
+          "grade": "F",
+          "status": "Fail"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "12",
+          "percentage": "48.0%",
+          "grade": "F",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "11",
+          "percentage": "44.0%",
+          "grade": "F",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "23.5",
+          "percentage": "94.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "7",
+          "percentage": "28.0%",
+          "grade": "F",
+          "status": "Fail"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "122",
+      "percentage": "61",
+      "grade": "C",
+      "remarks": "Good effort. Consistent revision recommended for improvement.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320399686752",
+      "name": "Rubab Zahra",
+      "class_pos": "44",
+      "sec_pos": "15",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "19",
+          "percentage": "76.0%",
+          "grade": "B",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22.5",
+          "percentage": "90.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "14",
+          "percentage": "56.0%",
+          "grade": "D",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "20.5",
+          "percentage": "82.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "166.5",
+      "percentage": "83.25",
+      "grade": "A",
+      "remarks": "Excellent achievement! High academic dedication demonstrated.",
+      "status": "Pass"
+    },
+    {
+      "id": "3610227883843",
+      "name": "Sadia Ashfaq",
+      "class_pos": "1",
+      "sec_pos": "1",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "200",
+      "percentage": "100",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320333379044",
+      "name": "Sana Bibi",
+      "class_pos": "86",
+      "sec_pos": "21",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22",
+          "percentage": "88.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "6",
+          "percentage": "24.0%",
+          "grade": "F",
+          "status": "Fail"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "Leave",
+          "percentage": "-",
+          "grade": "Leave",
+          "status": "Leave"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "23",
+          "percentage": "92.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "9",
+          "percentage": "36.0%",
+          "grade": "F",
+          "status": "Fail"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "85",
+      "percentage": "42.5",
+      "grade": "F",
+      "remarks": "Needs immediate academic attention and remedial guidance.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320336703854",
+      "name": "Seerat Fatima",
+      "class_pos": "10",
+      "sec_pos": "8",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "21",
+          "percentage": "84.0%",
+          "grade": "A",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "193.5",
+      "percentage": "96.75",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320398297368",
+      "name": "Sehr ul Nisa",
+      "class_pos": "7",
+      "sec_pos": "7",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "22.5",
+          "percentage": "90.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "196",
+      "percentage": "98",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "4010071912916",
+      "name": "Warda Hassan",
+      "class_pos": "84",
+      "sec_pos": "20",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "6",
+          "percentage": "24.0%",
+          "grade": "F",
+          "status": "Fail"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "16.5",
+          "percentage": "66.0%",
+          "grade": "C",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "9",
+          "percentage": "36.0%",
+          "grade": "F",
+          "status": "Fail"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "6",
+          "percentage": "24.0%",
+          "grade": "F",
+          "status": "Fail"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "12",
+          "percentage": "48.0%",
+          "grade": "F",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "16.5",
+          "percentage": "66.0%",
+          "grade": "C",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "3",
+          "percentage": "12.0%",
+          "grade": "F",
+          "status": "Fail"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "93.5",
+      "percentage": "46.75",
+      "grade": "F",
+      "remarks": "Needs immediate academic attention and remedial guidance.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320338879392",
+      "name": "Zainab Shaukat",
+      "class_pos": "2",
+      "sec_pos": "2",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "199.5",
+      "percentage": "99.75",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    },
+    {
+      "id": "3320201493014",
+      "name": "Zuhra Hayat",
+      "class_pos": "6",
+      "sec_pos": "6",
+      "subjects": [
+        {
+          "name": "English",
+          "code": "ENG",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Urdu",
+          "code": "URD",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Mathematics",
+          "code": "MTH",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Science",
+          "code": "SCI",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24.5",
+          "percentage": "98.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Social Studies",
+          "code": "SST",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Islamiat",
+          "code": "ISL",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Quranic Education",
+          "code": "Q.E",
+          "max": 25,
+          "pass": 10,
+          "obtained": "25",
+          "percentage": "100.0%",
+          "grade": "A+",
+          "status": "Pass"
+        },
+        {
+          "name": "Computer Science",
+          "code": "CSC",
+          "max": 25,
+          "pass": 10,
+          "obtained": "24",
+          "percentage": "96.0%",
+          "grade": "A+",
+          "status": "Pass"
+        }
+      ],
+      "total_marks": "200",
+      "obtained_marks": "197",
+      "percentage": "98.5",
+      "grade": "A+",
+      "remarks": "Outstanding performance! Keep maintaining this exemplary standard.",
+      "status": "Pass"
+    }
+  ]
+}

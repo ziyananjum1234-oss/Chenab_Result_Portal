@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Result Portal &bull; Chenab College Shorkot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy-deep: #081d38;
+            --navy-card: #0c274a;
+            --navy-light: #163660;
+            --gold: #c69222;
+            --gold-light: #dfb249;
+            --gold-subtle: #fcf8ee;
+            --gold-border: #e6cb85;
+            --slate-bg: #f3f6fa;
+            --text-dark: #0f172a;
+            --text-muted: #52637a;
+            --border-soft: #e2e8f0;
+            --success-green: #0d824d;
+            --success-bg: #eafaf1;
+            --danger-red: #c02626;
+            --danger-bg: #fdf2f2;
+            --leave-orange: #b45309;
+            --leave-bg: #fffbeb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--slate-bg);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.5;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(12, 39, 74, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(198, 146, 34, 0.04) 0px, transparent 50%);
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 16px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        /* Clean Executive Header */
+        .executive-header {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 36px 24px;
+            text-align: center;
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            box-shadow: 0 10px 30px -8px rgba(8, 29, 56, 0.07);
+            position: relative;
+            overflow: hidden;
+        }
+        .executive-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--navy-deep), var(--gold), var(--navy-deep));
+        }
+
+        .college-logo {
+            width: 95px;
+            height: 95px;
+            object-fit: contain;
+            margin: 0 auto 14px;
+            display: block;
+            border-radius: 50%;
+            border: 3px solid var(--gold);
+            padding: 4px;
+            background: #ffffff;
+            box-shadow: 0 4px 16px rgba(198, 146, 34, 0.2);
+        }
+
+        .college-title {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 2.15rem;
+            color: var(--navy-deep);
+            font-weight: 800;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 6px;
+        }
+
+        .controller-tag {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 14px;
+            display: inline-block;
+        }
+
+        .exam-info-badges {
+            display: inline-flex;
+            gap: 10px;
+            background: #f8fafc;
+            border: 1px solid var(--border-soft);
+            padding: 8px 22px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .exam-info-badges strong {
+            color: var(--navy-deep);
+        }
+
+        /* Clean Search Box ONLY */
+        .search-container {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 32px 28px;
+            border: 1px solid var(--border-soft);
+            box-shadow: 0 10px 30px -8px rgba(8, 29, 56, 0.07);
+            text-align: center;
+        }
+
+        .search-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--navy-deep);
+            margin-bottom: 6px;
+        }
+
+        .search-hint {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 12px;
+            max-width: 620px;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+        @media (min-width: 580px) {
+            .search-form {
+                flex-direction: row;
+            }
+        }
+
+        .input-group {
+            position: relative;
+            flex: 1;
+        }
+
+        .search-input {
+            width: 100%;
+            height: 54px;
+            padding: 0 20px 0 48px;
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--navy-deep);
+            background: #f8fafc;
+            border: 2px solid #cbd5e1;
+            border-radius: 12px;
+            outline: none;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+        .search-input:focus {
+            background: #ffffff;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 4px rgba(198, 146, 34, 0.15);
+        }
+        .search-input::placeholder {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-size: 1.25rem;
+        }
+
+        .btn-check {
+            height: 54px;
+            padding: 0 32px;
+            background: linear-gradient(135deg, var(--navy-deep), var(--navy-card));
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 14px rgba(8, 29, 56, 0.25);
+            white-space: nowrap;
+        }
+        .btn-check:hover {
+            background: linear-gradient(135deg, var(--navy-card), var(--navy-light));
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(8, 29, 56, 0.35);
+        }
+
+        /* Error Notification */
+        .error-box {
+            display: none;
+            max-width: 620px;
+            margin: 18px auto 0;
+            padding: 14px 18px;
+            background: var(--danger-bg);
+            border: 1px solid #fecaca;
+            color: var(--danger-red);
+            border-radius: 10px;
+            font-size: 0.92rem;
+            font-weight: 600;
+            align-items: center;
+            gap: 10px;
+            text-align: left;
+        }
+
+        /* ========================================================
+           WORLD-CLASS RESULT TRANSCRIPT / DMC
+        ======================================================== */
+        #resultView {
+            display: none;
+            animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .transcript-card {
+            background: #ffffff;
+            border-radius: 20px;
+            border: 2px solid var(--gold-border);
+            box-shadow: 0 20px 50px -10px rgba(8, 29, 56, 0.18);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .transcript-inner {
+            padding: 44px 38px 36px;
+            position: relative;
+            background: #ffffff;
+        }
+        .transcript-inner::before {
+            content: "CCS";
+            position: absolute;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-25deg);
+            font-family: 'Cinzel', serif;
+            font-size: 16rem;
+            font-weight: 900;
+            color: rgba(8, 29, 56, 0.025);
+            pointer-events: none;
+            user-select: none;
+            z-index: 0;
+        }
+
+        /* Certificate Title Header with QR Code Corner */
+        .cert-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid var(--navy-deep);
+            padding-bottom: 22px;
+            margin-bottom: 26px;
+            position: relative;
+            z-index: 1;
+            gap: 16px;
+        }
+        .cert-header-main {
+            flex: 1;
+            text-align: center;
+        }
+        .cert-logo-center {
+            width: 76px;
+            height: 76px;
+            object-fit: contain;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        .cert-college {
+            font-family: 'Cinzel', Georgia, serif;
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--navy-deep);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .cert-doc-type {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.35rem;
+            color: var(--gold);
+            font-style: italic;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+        .cert-session-line {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-top: 4px;
+        }
+
+        .cert-qr-box {
+            width: 82px;
+            text-align: center;
+            flex-shrink: 0;
+            display: none;
+        }
+        @media (min-width: 620px) {
+            .cert-qr-box {
+                display: block;
+            }
+        }
+        .qr-img {
+            width: 76px;
+            height: 76px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            padding: 2px;
+            background: #ffffff;
+        }
+        .qr-caption {
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+        }
+
+        /* Student Metadata Grid */
+        .student-bio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            background: #f8fafc;
+            border: 1px solid var(--border-soft);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin-bottom: 28px;
+            position: relative;
+            z-index: 1;
+        }
+        .bio-field {
+            display: flex;
+            flex-direction: column;
+        }
+        .bio-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+            margin-bottom: 3px;
+        }
+        .bio-val {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--navy-deep);
+        }
+        .bio-val.highlight {
+            color: var(--gold);
+        }
+
+        /* Master Marks Table */
+        .table-wrap {
+            overflow-x: auto;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+            border-radius: 12px;
+            border: 1px solid var(--border-soft);
+        }
+        .cert-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.94rem;
+        }
+        .cert-table thead th {
+            background: var(--navy-deep);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding: 14px 16px;
+            text-align: left;
+        }
+        .cert-table thead th.center {
+            text-align: center;
+        }
+        .cert-table tbody td {
+            padding: 13px 16px;
+            border-bottom: 1px solid var(--border-soft);
+            color: var(--text-dark);
+            vertical-align: middle;
+        }
+        .cert-table tbody td.center {
+            text-align: center;
+        }
+        .cert-table tbody tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .cert-table tbody tr:hover {
+            background: #f1f5f9;
+        }
+
+        .pct-cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 700;
+            color: var(--navy-deep);
+        }
+        .mini-bar {
+            width: 50px;
+            height: 6px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .mini-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--gold), var(--success-green));
+            border-radius: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .badge-pass {
+            background: var(--success-bg);
+            color: var(--success-green);
+            border: 1px solid #bbf7d0;
+        }
+        .badge-fail {
+            background: var(--danger-bg);
+            color: var(--danger-red);
+            border: 1px solid #fecaca;
+        }
+        .badge-leave {
+            background: var(--leave-bg);
+            color: var(--leave-orange);
+            border: 1px solid #fde68a;
+        }
+
+        /* Executive Summary Panel */
+        .summary-dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+        .dash-tile {
+            background: #f8fafc;
+            border: 1px solid var(--border-soft);
+            border-radius: 14px;
+            padding: 16px 14px;
+            text-align: center;
+        }
+        .dash-tile.grand-status {
+            background: linear-gradient(135deg, var(--navy-deep), var(--navy-card));
+            color: #ffffff;
+            border-color: var(--navy-deep);
+        }
+        .dash-tile.grand-status .tile-lbl {
+            color: rgba(255, 255, 255, 0.75);
+        }
+        .dash-tile.grand-status .tile-val {
+            color: #ffffff;
+        }
+        .tile-lbl {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+        .tile-val {
+            font-size: 1.55rem;
+            font-weight: 800;
+            color: var(--navy-deep);
+        }
+        .tile-val.gold {
+            color: var(--gold);
+        }
+
+        /* Teacher Remarks Box */
+        .remarks-box {
+            background: var(--gold-subtle);
+            border: 1px solid var(--gold-border);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.92rem;
+            position: relative;
+            z-index: 1;
+        }
+        .remarks-tag {
+            font-weight: 800;
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.8px;
+            white-space: nowrap;
+        }
+        .remarks-text {
+            color: var(--navy-deep);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        /* Official Verification & Signatures with Stamp */
+        .cert-footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 36px;
+            padding-top: 32px;
+            border-top: 1px dashed #cbd5e1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            align-items: flex-end;
+        }
+        @media (max-width: 600px) {
+            .cert-footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        .official-seal {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 6px;
+            border: 2px dashed #b91c1c;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #b91c1c;
+            transform: rotate(-10deg);
+            padding: 4px;
+            user-select: none;
+        }
+        .seal-txt-top { font-size: 0.55rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; }
+        .seal-txt-mid { font-size: 0.75rem; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; }
+        .seal-txt-bot { font-size: 0.52rem; font-weight: 700; text-transform: uppercase; }
+
+        .sig-rule {
+            width: 75%;
+            margin: 0 auto 6px;
+            border-top: 1px solid #94a3b8;
+        }
+        .sig-name {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* Security Bar */
+        .security-audit-bar {
+            margin-top: 26px;
+            padding-top: 14px;
+            border-top: 1px solid #f1f5f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        /* Action Tray */
+        .action-tray {
+            background: #f8fafc;
+            border-top: 1px solid var(--border-soft);
+            padding: 16px 28px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .btn-ui {
+            padding: 11px 20px;
+            border-radius: 10px;
+            font-size: 0.92rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            font-family: inherit;
+        }
+        .btn-print-doc {
+            background: linear-gradient(135deg, var(--gold), #a77717);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(198, 146, 34, 0.25);
+        }
+        .btn-print-doc:hover {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold));
+            transform: translateY(-1px);
+        }
+        .btn-whatsapp {
+            background: #25d366;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+        }
+        .btn-whatsapp:hover {
+            background: #1eb857;
+            transform: translateY(-1px);
+        }
+        .btn-new-search {
+            background: #ffffff;
+            color: var(--navy-deep);
+            border: 1px solid #cbd5e1;
+        }
+        .btn-new-search:hover {
+            background: #e2e8f0;
+        }
+
+        /* Bottom Footer */
+        .footer-note {
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: auto;
+        }
+
+        /* Clean Print Style */
+        @media print {
+            body {
+                background: #ffffff !important;
+                padding: 0 !important;
+            }
+            .executive-header, .search-container, .action-tray, .footer-note {
+                display: none !important;
+            }
+            .wrapper {
+                max-width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            #resultView {
+                display: block !important;
+            }
+            .transcript-card {
+                box-shadow: none !important;
+                border: 2px solid #000000 !important;
+                border-radius: 0 !important;
+            }
+            .transcript-inner {
+                padding: 24px !important;
+            }
+            .cert-table thead th {
+                background: #e2e8f0 !important;
+                color: #000000 !important;
+                border: 1px solid #000000 !important;
+            }
+            .cert-table tbody td {
+                border: 1px solid #cccccc !important;
+            }
+            .dash-tile.grand-status {
+                background: #f1f5f9 !important;
+                color: #000 !important;
+                border: 1px solid #000 !important;
+            }
+            .dash-tile.grand-status .tile-lbl, .dash-tile.grand-status .tile-val {
+                color: #000 !important;
+            }
+            .cert-footer-grid {
+                margin-top: 50px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- 1. Executive College Header (Clean & Official) -->
+        <header class="executive-header">
+            <img src="data:image/jpeg;base64,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" alt="Chenab College Logo" class="college-logo">
+            <h1 class="college-title">Chenab College Shorkot</h1>
+            <div class="controller-tag">Office of the Controller of Examinations</div>
+            <div>
+                <div class="exam-info-badges">
+                    <span><strong>Assessment:</strong> Monthly Test Oct, 2026</span>
+                    <span>&bull;</span>
+                    <span><strong>Session:</strong> 2026-2027</span>
+                    <span>&bull;</span>
+                    <span><strong>Class:</strong> 7 - (G) Jades</span>
+                    <span>&bull;</span>
+                    <span><strong>Date:</strong> 10/16/2026</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. Clean Search Box ONLY (No other data shown before search) -->
+        <section class="search-container" id="searchSection">
+            <h2 class="search-title">Online Student Result Portal</h2>
+            <p class="search-hint">Enter your Student ID / B-Form Number or Student Name to view your Detailed Marksheet.</p>
+
+            <form class="search-form" id="searchForm" onsubmit="executeSearch(event)">
+                <div class="input-group">
+                    <span class="search-icon">🔍</span>
+                    <input 
+                        type="text" 
+                        id="studentInput" 
+                        class="search-input" 
+                        placeholder="Enter Student ID (e.g. 3320354393768) or Name"
+                        autocomplete="off"
+                        required
+                        autofocus
+                    >
+                </div>
+                <button type="submit" class="btn-check">
+                    <span>View Result</span> &rarr;
+                </button>
+            </form>
+
+            <div id="errorAlert" class="error-box">
+                <span>⚠️</span>
+                <span id="errorMsg">Record not found. Please verify the ID or Name.</span>
+            </div>
+        </section>
+
+        <!-- 3. World-Class Result Transcript (Revealed on Search) -->
+        <section id="resultView">
+            <div class="transcript-card">
+                <div class="transcript-inner">
+                    <!-- Certificate Header -->
+                    <div class="cert-header">
+                        <div style="width: 82px;" class="cert-qr-box"></div>
+                        <div class="cert-header-main">
+                            <img src="data:image/jpeg;base64,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" alt="Chenab College" class="cert-logo-center">
+                            <div class="cert-college">Chenab College Shorkot</div>
+                            <div class="cert-doc-type">Detailed Marks Certificate (DMC)</div>
+                            <div class="cert-session-line">Monthly Examination &bull; Academic Session 2026-2027</div>
+                        </div>
+                        <div class="cert-qr-box">
+                            <img id="dynamicQr" src="" alt="Verification QR" class="qr-img">
+                            <div class="qr-caption">Scan to Verify</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Information Grid -->
+                    <div class="student-bio-grid">
+                        <div class="bio-field">
+                            <span class="bio-label">Student Name</span>
+                            <span class="bio-val" id="dispName">-</span>
+                        </div>
+                        <div class="bio-field">
+                            <span class="bio-label">Registration / B-Form ID</span>
+                            <span class="bio-val" id="dispId" style="font-family: monospace; letter-spacing: 0.5px;">-</span>
+                        </div>
+                        <div class="bio-field">
+                            <span class="bio-label">Class & Section</span>
+                            <span class="bio-val">Class : 7 - (G) Jades</span>
+                        </div>
+                        <div class="bio-field">
+                            <span class="bio-label">Exam Date</span>
+                            <span class="bio-val">10/16/2026</span>
+                        </div>
+                        <div class="bio-field">
+                            <span class="bio-label">Class Position</span>
+                            <span class="bio-val highlight" id="dispClassPos">-</span>
+                        </div>
+                        <div class="bio-field">
+                            <span class="bio-label">Section Position</span>
+                            <span class="bio-val" id="dispSecPos" style="color: var(--success-green);">-</span>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Subject-Wise Marks & Percentages -->
+                    <div class="table-wrap">
+                        <table class="cert-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 45px;" class="center">Sr.</th>
+                                    <th>Subject Description</th>
+                                    <th class="center" style="width: 95px;">Max Marks</th>
+                                    <th class="center" style="width: 95px;">Pass Marks</th>
+                                    <th class="center" style="width: 120px;">Marks Obtained</th>
+                                    <th class="center" style="width: 130px;">Percentage</th>
+                                    <th class="center" style="width: 80px;">Grade</th>
+                                    <th class="center" style="width: 100px;">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="subjectTableBody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Executive Summary Tiles -->
+                    <div class="summary-dashboard">
+                        <div class="dash-tile">
+                            <div class="tile-lbl">Total Marks</div>
+                            <div class="tile-val" id="dispTotalMarks">200</div>
+                        </div>
+                        <div class="dash-tile">
+                            <div class="tile-lbl">Marks Obtained</div>
+                            <div class="tile-val" id="dispObtainedMarks">-</div>
+                        </div>
+                        <div class="dash-tile">
+                            <div class="tile-lbl">Aggregate %</div>
+                            <div class="tile-val" id="dispPercentage">-%</div>
+                        </div>
+                        <div class="dash-tile">
+                            <div class="tile-lbl">Overall Grade</div>
+                            <div class="tile-val gold" id="dispGrade">-</div>
+                        </div>
+                        <div class="dash-tile grand-status" id="dispStatusTile">
+                            <div class="tile-lbl">Result Status</div>
+                            <div class="tile-val" id="dispStatus">PASS</div>
+                        </div>
+                    </div>
+
+                    <!-- Teacher Remarks -->
+                    <div class="remarks-box">
+                        <span class="remarks-tag">Academic Remarks:</span>
+                        <span class="remarks-text" id="dispRemarks">Outstanding performance! Keep it up.</span>
+                    </div>
+
+                    <!-- Signatures Block with Red Official Seal -->
+                    <div class="cert-footer-grid">
+                        <div class="sig-col">
+                            <div class="sig-rule"></div>
+                            <div class="sig-name">Class Incharge</div>
+                        </div>
+                        <div class="sig-col">
+                            <div class="sig-rule"></div>
+                            <div class="sig-name">Coordinator</div>
+                        </div>
+                        <div class="sig-col">
+                            <div class="official-seal">
+                                <span class="seal-txt-top">Chenab College</span>
+                                <span class="seal-txt-mid">VERIFIED</span>
+                                <span class="seal-txt-bot">Exam Branch</span>
+                            </div>
+                            <div class="sig-rule"></div>
+                            <div class="sig-name">Controller Exam</div>
+                        </div>
+                        <div class="sig-col">
+                            <div class="sig-rule"></div>
+                            <div class="sig-name">Principal</div>
+                        </div>
+                    </div>
+
+                    <!-- Security Audit Line -->
+                    <div class="security-audit-bar">
+                        <span>🔒 Computer Generated Official DMC &bull; Chenab College Shorkot</span>
+                        <span id="auditTimestamp">System Date: October 2026</span>
+                    </div>
+                </div>
+
+                <!-- Action Tray -->
+                <div class="action-tray">
+                    <button type="button" class="btn-ui btn-new-search" onclick="backToSearch()">
+                        🔍 Search Another Student
+                    </button>
+                    <button type="button" class="btn-ui btn-whatsapp" onclick="shareOnWhatsApp()">
+                        💬 Share on WhatsApp
+                    </button>
+                    <button type="button" class="btn-ui btn-print-doc" onclick="window.print()">
+                        🖨️ Print / Save as PDF (DMC)
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-note">
+            &copy; 2026-2027 Chenab College Shorkot. All Rights Reserved. &bull; Official Examination Portal
+        </footer>
+    </div>
+
+    <!-- Student Data and Logic -->
+    <script>
+        const DB = {"institute": "Chenab College Shorkot", "test_name": "MONTHY TEST OCT,2026", "session": "2026-27", "class_name": "Class : 7 - (G) Jades", "exam_date": "Exam Date:10/16/2026", "total_students": 24, "students": [{"id": "3320354393768", "name": "Amna Ibrahim", "class_pos": "3", "sec_pos": "3", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "199", "percentage": "99.5", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320349244556", "name": "Asmara Fatima", "class_pos": "28", "sec_pos": "12", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "12", "percentage": "48.0%", "grade": "F", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "21.5", "percentage": "86.0%", "grade": "A", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "23", "percentage": "92.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "177.5", "percentage": "88.75", "grade": "A", "remarks": "Excellent achievement! High academic dedication demonstrated.", "status": "Pass"}, {"id": "3320383240278", "name": "Dua Fatima", "class_pos": "11", "sec_pos": "9", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "23.5", "percentage": "94.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "19.5", "percentage": "78.0%", "grade": "B", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "193", "percentage": "96.5", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3810153863478", "name": "Eishal Fatima", "class_pos": "63", "sec_pos": "17", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "22.5", "percentage": "90.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "144.5", "percentage": "72.25", "grade": "B", "remarks": "Very good result. With focused effort, can achieve top grades.", "status": "Pass"}, {"id": "3320328230300", "name": "Eman Sajid", "class_pos": "38", "sec_pos": "13", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "22.5", "percentage": "90.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "15.5", "percentage": "62.0%", "grade": "C", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "23", "percentage": "92.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "21.5", "percentage": "86.0%", "grade": "A", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "12.5", "percentage": "50.0%", "grade": "D", "status": "Pass"}], "total_marks": "200", "obtained_marks": "170", "percentage": "85", "grade": "A", "remarks": "Excellent achievement! High academic dedication demonstrated.", "status": "Pass"}, {"id": "3320318363332", "name": "Eshal Zahra", "class_pos": "58", "sec_pos": "16", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "148.5", "percentage": "74.25", "grade": "B", "remarks": "Very good result. With focused effort, can achieve top grades.", "status": "Pass"}, {"id": "3320368474610", "name": "Faseeh Noor", "class_pos": "1", "sec_pos": "1", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "200", "percentage": "100", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320320393736", "name": "Hadia Waseem", "class_pos": "16", "sec_pos": "11", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "23.5", "percentage": "94.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "17.5", "percentage": "70.0%", "grade": "B", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "188.5", "percentage": "94.25", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320377126312", "name": "Hareem Fatima", "class_pos": "5", "sec_pos": "5", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "197.5", "percentage": "98.75", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320388353182", "name": "Maria Altaf", "class_pos": "1", "sec_pos": "1", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "200", "percentage": "100", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320359105148", "name": "Marwa Mudassar", "class_pos": "12", "sec_pos": "10", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "18.5", "percentage": "74.0%", "grade": "B", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "192.5", "percentage": "96.25", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320362755030", "name": "Mifrah Fakhir", "class_pos": "4", "sec_pos": "4", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "198", "percentage": "99", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3610235107158", "name": "Mizab-e- Rehmat", "class_pos": "4", "sec_pos": "4", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "198", "percentage": "99", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320377918352", "name": "Moazma Narjis", "class_pos": "43", "sec_pos": "14", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "23", "percentage": "92.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "19", "percentage": "76.0%", "grade": "B", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "167", "percentage": "83.5", "grade": "A", "remarks": "Excellent achievement! High academic dedication demonstrated.", "status": "Pass"}, {"id": "3630244714946", "name": "Noor Fatima", "class_pos": "71", "sec_pos": "18", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "16.5", "percentage": "66.0%", "grade": "C", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "23.5", "percentage": "94.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}], "total_marks": "200", "obtained_marks": "133", "percentage": "66.5", "grade": "C", "remarks": "Good effort. Consistent revision recommended for improvement.", "status": "Pass"}, {"id": "3320366801548", "name": "Rabiya Riaz", "class_pos": "76", "sec_pos": "19", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "19", "percentage": "76.0%", "grade": "B", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "19.5", "percentage": "78.0%", "grade": "B", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "8", "percentage": "32.0%", "grade": "F", "status": "Fail"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "12", "percentage": "48.0%", "grade": "F", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "11", "percentage": "44.0%", "grade": "F", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "23.5", "percentage": "94.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "7", "percentage": "28.0%", "grade": "F", "status": "Fail"}], "total_marks": "200", "obtained_marks": "122", "percentage": "61", "grade": "C", "remarks": "Good effort. Consistent revision recommended for improvement.", "status": "Pass"}, {"id": "3320399686752", "name": "Rubab Zahra", "class_pos": "44", "sec_pos": "15", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "19", "percentage": "76.0%", "grade": "B", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "22.5", "percentage": "90.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "14", "percentage": "56.0%", "grade": "D", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "20.5", "percentage": "82.0%", "grade": "A", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}], "total_marks": "200", "obtained_marks": "166.5", "percentage": "83.25", "grade": "A", "remarks": "Excellent achievement! High academic dedication demonstrated.", "status": "Pass"}, {"id": "3610227883843", "name": "Sadia Ashfaq", "class_pos": "1", "sec_pos": "1", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "200", "percentage": "100", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320333379044", "name": "Sana Bibi", "class_pos": "86", "sec_pos": "21", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "22", "percentage": "88.0%", "grade": "A", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "6", "percentage": "24.0%", "grade": "F", "status": "Fail"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "Leave", "percentage": "-", "grade": "Leave", "status": "Leave"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "23", "percentage": "92.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "9", "percentage": "36.0%", "grade": "F", "status": "Fail"}], "total_marks": "200", "obtained_marks": "85", "percentage": "42.5", "grade": "F", "remarks": "Needs immediate academic attention and remedial guidance.", "status": "Pass"}, {"id": "3320336703854", "name": "Seerat Fatima", "class_pos": "10", "sec_pos": "8", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "21", "percentage": "84.0%", "grade": "A", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "193.5", "percentage": "96.75", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320398297368", "name": "Sehr ul Nisa", "class_pos": "7", "sec_pos": "7", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "22.5", "percentage": "90.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "196", "percentage": "98", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "4010071912916", "name": "Warda Hassan", "class_pos": "84", "sec_pos": "20", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "6", "percentage": "24.0%", "grade": "F", "status": "Fail"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "16.5", "percentage": "66.0%", "grade": "C", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "9", "percentage": "36.0%", "grade": "F", "status": "Fail"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "6", "percentage": "24.0%", "grade": "F", "status": "Fail"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "12", "percentage": "48.0%", "grade": "F", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "16.5", "percentage": "66.0%", "grade": "C", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "3", "percentage": "12.0%", "grade": "F", "status": "Fail"}], "total_marks": "200", "obtained_marks": "93.5", "percentage": "46.75", "grade": "F", "remarks": "Needs immediate academic attention and remedial guidance.", "status": "Pass"}, {"id": "3320338879392", "name": "Zainab Shaukat", "class_pos": "2", "sec_pos": "2", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "199.5", "percentage": "99.75", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}, {"id": "3320201493014", "name": "Zuhra Hayat", "class_pos": "6", "sec_pos": "6", "subjects": [{"name": "English", "code": "ENG", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Urdu", "code": "URD", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Mathematics", "code": "MTH", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}, {"name": "Science", "code": "SCI", "max": 25, "pass": 10, "obtained": "24.5", "percentage": "98.0%", "grade": "A+", "status": "Pass"}, {"name": "Social Studies", "code": "SST", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Islamiat", "code": "ISL", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Quranic Education", "code": "Q.E", "max": 25, "pass": 10, "obtained": "25", "percentage": "100.0%", "grade": "A+", "status": "Pass"}, {"name": "Computer Science", "code": "CSC", "max": 25, "pass": 10, "obtained": "24", "percentage": "96.0%", "grade": "A+", "status": "Pass"}], "total_marks": "200", "obtained_marks": "197", "percentage": "98.5", "grade": "A+", "remarks": "Outstanding performance! Keep maintaining this exemplary standard.", "status": "Pass"}]};
+        let currentStudent = null;
+
+        function executeSearch(e) {
+            e.preventDefault();
+            const raw = document.getElementById('studentInput').value.trim().toLowerCase();
+            const errorAlert = document.getElementById('errorAlert');
+            const errorMsg = document.getElementById('errorMsg');
+
+            if (!raw) return;
+
+            const record = DB.students.find(st => {
+                return st.id.toLowerCase() === raw || 
+                       st.name.toLowerCase().includes(raw) ||
+                       st.id.endsWith(raw);
+            });
+
+            if (record) {
+                errorAlert.style.display = 'none';
+                renderResult(record);
+            } else {
+                errorMsg.textContent = `No record found for "${raw}". Please enter a valid Student ID or Name.`;
+                errorAlert.style.display = 'flex';
+                document.getElementById('resultView').style.display = 'none';
+            }
+        }
+
+        function renderResult(st) {
+            currentStudent = st;
+            document.getElementById('dispName').textContent = st.name;
+            document.getElementById('dispId').textContent = st.id;
+            document.getElementById('dispClassPos').textContent = st.class_pos;
+            document.getElementById('dispSecPos').textContent = st.sec_pos;
+            document.getElementById('dispTotalMarks').textContent = st.total_marks;
+            document.getElementById('dispObtainedMarks').textContent = st.obtained_marks;
+            document.getElementById('dispPercentage').textContent = st.percentage + '%';
+            document.getElementById('dispGrade').textContent = st.grade || '-';
+            document.getElementById('dispRemarks').textContent = st.remarks || 'Keep up the good work.';
+            
+            // Dynamic Verification QR code
+            const qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=' + encodeURIComponent('CHENAB COLLEGE VERIFIED: ' + st.name + ' (' + st.id + ') Marks: ' + st.obtained_marks + '/200 (' + st.percentage + '%)');
+            document.getElementById('dynamicQr').src = qrUrl;
+
+            const statusVal = document.getElementById('dispStatus');
+            const statusTile = document.getElementById('dispStatusTile');
+            statusVal.textContent = st.status.toUpperCase();
+            
+            if (st.status.toLowerCase() === 'pass') {
+                statusTile.style.background = 'linear-gradient(135deg, #0d824d, #085a34)';
+            } else {
+                statusTile.style.background = 'linear-gradient(135deg, #c02626, #8e1818)';
+            }
+
+            // Render Subjects with Individual Percentages & Mini-Bars
+            const tbody = document.getElementById('subjectTableBody');
+            tbody.innerHTML = '';
+
+            st.subjects.forEach((sub, idx) => {
+                const tr = document.createElement('tr');
+
+                let badgeClass = 'badge-pass';
+                let statusText = 'Pass';
+                let pctNum = 0;
+
+                if (sub.status === 'Leave') {
+                    badgeClass = 'badge-leave';
+                    statusText = 'Leave';
+                } else if (sub.status === 'Fail') {
+                    badgeClass = 'badge-fail';
+                    statusText = 'Fail';
+                }
+
+                if (sub.percentage && sub.percentage.includes('%')) {
+                    pctNum = parseFloat(sub.percentage) || 0;
+                }
+
+                const miniBarHtml = sub.status === 'Leave' 
+                    ? '<span style="color: #94a3b8;">-</span>'
+                    : `
+                        <div class="pct-cell">
+                            <span>${sub.percentage}</span>
+                            <div class="mini-bar">
+                                <div class="mini-bar-fill" style="width: ${pctNum}%;"></div>
+                            </div>
+                        </div>
+                    `;
+
+                tr.innerHTML = `
+                    <td class="center" style="color: var(--text-muted); font-size: 0.85rem;">${idx + 1}</td>
+                    <td style="font-weight: 700; color: var(--navy-deep);">${sub.name} <span style="font-size: 0.8rem; color: #94a3b8; font-weight: 500;">(${sub.code})</span></td>
+                    <td class="center" style="font-weight: 600;">${sub.max}</td>
+                    <td class="center" style="color: var(--text-muted);">${sub.pass}</td>
+                    <td class="center" style="font-weight: 800; font-size: 1.05rem; color: var(--navy-deep);">${sub.obtained}</td>
+                    <td class="center">${miniBarHtml}</td>
+                    <td class="center" style="font-weight: 800; color: var(--gold);">${sub.grade}</td>
+                    <td class="center"><span class="badge ${badgeClass}">${statusText}</span></td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            const resultView = document.getElementById('resultView');
+            resultView.style.display = 'block';
+            resultView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function backToSearch() {
+            document.getElementById('studentInput').value = '';
+            document.getElementById('studentInput').focus();
+            document.getElementById('resultView').style.display = 'none';
+            document.getElementById('errorAlert').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function shareOnWhatsApp() {
+            if (!currentStudent) return;
+            const text = `🎓 *Chenab College Shorkot - Result Card*%0A` +
+                         `*Exam:* Monthly Test Oct, 2026%0A` +
+                         `*Student:* ${currentStudent.name}%0A` +
+                         `*Roll No/ID:* ${currentStudent.id}%0A` +
+                         `*Marks:* ${currentStudent.obtained_marks} / ${currentStudent.total_marks} (${currentStudent.percentage}%)%0A` +
+                         `*Grade:* ${currentStudent.grade}%0A` +
+                         `*Class Position:* ${currentStudent.class_pos}%0A` +
+                         `*Status:* ${currentStudent.status}`;
+            window.open('https://api.whatsapp.com/send?text=' + text, '_blank');
+        }
+    </script>
+</body>
+</html>
